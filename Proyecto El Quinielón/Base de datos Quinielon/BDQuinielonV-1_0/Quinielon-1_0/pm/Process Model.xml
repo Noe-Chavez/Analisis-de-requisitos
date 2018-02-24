@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="D649086E-01A6-C069-455E-F0EA46C2D6A1">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:01:34 UTC</createdTime>
+<ownerDesignName>BaseDatosQuinielon</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F97DCD6A-3B19-37A3-9BE2-B0905A44D85A" name="cuenta de usuario">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 04:56:13 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>cuenta</shortName>
+<synonym>logging</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre de cuenta" id="1672DABF-1CB9-8CAF-3569-FC96523C5A64">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 04:56:58 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contraseña" id="6443F496-67D5-8DA1-207F-C716A610A3C9">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 04:58:04 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id participante " id="CB51EE99-FBD2-9881-7A21-2055FFD49358">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:33:28 UTC</createdTime>
+<comment>Clave  única asignada algorítmica mente. </comment>
+<generatorID>4CF6A9CA-B4AB-C23D-E311-6EB7538CA699</generatorID>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<referedAttribute>C549E7AF-6E06-16ED-CFBB-5083CC291CEA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

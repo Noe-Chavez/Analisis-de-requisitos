@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB5A0913-706C-4750-04E7-F5D191326EBD" name="Quiniela/Equipo">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EQUIPO_id_equipo" id="D23B4B5A-6478-3C3B-B0BA-9F52906994F8">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A790FA9-634C-8DAE-F843-D728A44371A0" referredColumn="98B52F6F-BF5C-6AA0-8A31-B41B13A91FBF"/>
+</associations>
+</Column>
+<Column name="QUINIELA_id_quiniela" id="3F9DDAE9-ED73-FBAC-0D07-42BF44207014">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="430CB7DC-A01A-C108-B205-BB8754C78EEC" referredColumn="37DF12F7-B26D-EBCB-0CF1-E8DC2D4EC737"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C86BA82-419C-63C8-F6A1-233E8D0DC9C1" name="Quiniela/Equipo_PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D23B4B5A-6478-3C3B-B0BA-9F52906994F8"/>
+<colUsage columnID="3F9DDAE9-ED73-FBAC-0D07-42BF44207014"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A7CEE6D-0B7B-0DAC-5A56-01A7BC0F431E" name="FK_ASS_2">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>F6130050-7A7F-B798-DA53-D978E21D9AFE</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D23B4B5A-6478-3C3B-B0BA-9F52906994F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="720B2E98-5EFE-F00D-C9D7-A69E502D9A16" name="FK_ASS_3">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>F6130050-7A7F-B798-DA53-D978E21D9AFE</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F9DDAE9-ED73-FBAC-0D07-42BF44207014"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

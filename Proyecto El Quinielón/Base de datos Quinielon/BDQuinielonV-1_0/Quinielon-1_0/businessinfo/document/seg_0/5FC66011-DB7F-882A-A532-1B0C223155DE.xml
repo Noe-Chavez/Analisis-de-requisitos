@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BIDocument class="oracle.dbtools.crest.model.businessinfo.BIDocument" name="Doc_1" directorySegmentName="seg_0" id="5FC66011-DB7F-882A-A532-1B0C223155DE">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:45:01 UTC</createdTime>
+<ownerDesignName>BaseDatosQuinielon</ownerDesignName>
+</BIDocument>

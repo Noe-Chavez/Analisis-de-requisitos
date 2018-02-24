@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="participante/tarjeta bancaria" directorySegmentName="seg_0" id="003842E8-2CD1-F99B-C477-0271761CA750">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:41:29 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<sourcePk>8543D294-62CF-D8AA-F676-EB091F00C45B</sourcePk>
+<targetPk>F4CA1546-AD29-4499-0C9F-900A1F47ED7B</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FDD2C522-A0FC-8D50-360A-B315B95439CF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CF864DD1-880D-2F34-9837-16B789D15782</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

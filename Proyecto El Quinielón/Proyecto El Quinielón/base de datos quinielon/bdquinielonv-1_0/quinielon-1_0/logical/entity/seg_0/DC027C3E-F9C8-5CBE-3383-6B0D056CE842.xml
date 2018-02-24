@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC027C3E-F9C8-5CBE-3383-6B0D056CE842" name="QUINIELA ">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:42:13 UTC</createdTime>
+<comment>Esta entidad almacenará los datos necesarios para llevar a cabo las quinielas.  </comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id quiniela" id="A6F44134-1BF1-2056-3E6E-68B3FC7C4441">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:04:08 UTC</createdTime>
+<comment>Número único asignado algorítmicamente. </comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="3DA07984-C37B-DF35-77D4-00A5956B7FAE">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:07:17 UTC</createdTime>
+<comment>valor total del costo de cada quiniela, precio sujeto a cambios con denominación en pesos mexicanos.</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valores del participante" id="224C6AA6-4C51-8FB0-CBBD-8192AFC43EFE">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:20:14 UTC</createdTime>
+<comment>Son los valores qué el participante o cliente indica en cada quiniela correspondiente a una jornada, ésta consta de 9 valores únicamente valores son: L: local, V: visitante, E: empate. </comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jornada" id="A3C73E79-E5B7-02A2-E79E-6C6ED2525856">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:25:50 UTC</createdTime>
+<comment>Conjunto de partidos que se juegan en una fecha del torneo clausura y apertura de la liga mexicana de futbol soccer, éstas contemplan 17 fechas nombradas también como jornadas. </comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id participante " id="0AEB3230-1584-8CC4-9661-2C41A5BB0EBA">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:43:41 UTC</createdTime>
+<comment>Clave  única asignada algorítmica mente. </comment>
+<generatorID>966886D1-2327-BE7C-25D7-0D872283F48F</generatorID>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<referedAttribute>C549E7AF-6E06-16ED-CFBB-5083CC291CEA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id resultado" id="CAFC3345-DB13-D694-7BBE-EFF4CBAD0420">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:15:54 UTC</createdTime>
+<generatorID>634CA1D5-B8AC-E890-BCA5-7809BB58AB9A</generatorID>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<referedAttribute>CE3C1D10-8067-4346-2C70-D564DD0D1797</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E8FBA99-D54B-F5AF-C483-043E1EF1B788" name="QUINIELA PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:04:28 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6F44134-1BF1-2056-3E6E-68B3FC7C4441</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

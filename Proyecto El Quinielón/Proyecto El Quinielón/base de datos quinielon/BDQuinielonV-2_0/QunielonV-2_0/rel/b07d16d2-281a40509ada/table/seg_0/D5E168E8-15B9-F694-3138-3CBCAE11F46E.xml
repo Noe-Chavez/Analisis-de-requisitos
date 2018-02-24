@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5E168E8-15B9-F694-3138-3CBCAE11F46E" name="RESULTADO_OFICIAL">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>C3ECCD71-E931-27C3-B37E-661530B3CD23</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_resultado" id="FE1E7A42-83EB-4F6D-11E3-09FA63FC9673">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>3E4171C1-3FF1-EA75-43B0-388586B011E3</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valores_oficiales" id="7DEA4070-A999-1D3E-0891-A9EA4052A9E9">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>19D7A888-55B9-A4EC-515F-73C96FB725C5</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jornada" id="38E5E52D-7C89-C548-D4F7-1A25E145C5CE">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>5F9C3CCB-3290-C277-8435-33412334092C</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_de_consulta" id="137E998B-DE89-3873-F0DB-F6D32FCF5010">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>577AFAA4-BBDD-0407-D723-1CDF923CE570</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUINIELA_id_quiniela" id="C970489C-E5B8-69CF-3999-E17AA23F98C8">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Número único asignado algorítmicamente. </comment>
+<generatorID>6ADEB40B-FEA2-0D3B-8876-F8F59470C213</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AFD4122-5B0E-F5AD-0996-47FCE6EC4E04" referredColumn="37DF12F7-B26D-EBCB-0CF1-E8DC2D4EC737"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8149BBB-82AF-E876-61DD-90C4F0E2F6D9" name="RESULTADO_OFICIAL_PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>70F9B8DA-3880-3393-B951-D6EA65CCCE42</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE1E7A42-83EB-4F6D-11E3-09FA63FC9673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6B06B7D-F000-9F21-7762-3C2BA7E2233D" name="RESULTADO_OFICIAL_QUINIELA_FK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>7FC1AB41-D260-BAE4-D039-99A5C41D3DD7</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C970489C-E5B8-69CF-3999-E17AA23F98C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="compra de quiniela" directorySegmentName="seg_0" id="966886D1-2327-BE7C-25D7-0D872283F48F">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:41:19 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<sourcePk>F4CA1546-AD29-4499-0C9F-900A1F47ED7B</sourcePk>
+<targetPk>4E8FBA99-D54B-F5AF-C483-043E1EF1B788</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CF864DD1-880D-2F34-9837-16B789D15782</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DC027C3E-F9C8-5CBE-3383-6B0D056CE842</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

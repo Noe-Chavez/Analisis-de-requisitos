@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="21501584-9034-0D2D-02DB-D507FE2CC7A6" mainViewID="B791FCF3-04A7-ACAB-4010-8ED3A376C79F">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:01:34 UTC</createdTime>
+<ownerDesignName>BaseDatosQuinielon</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

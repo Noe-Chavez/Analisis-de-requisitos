@@ -1,0 +1,3597 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<rem:requirementsProject
+xmlns:rem="http://rem.lsi.us.es">
+<rem:name>Requsitos para proyecto Quinielon</rem:name>
+<rem:c_requirementsSpecification oid = "CRS-0001">
+<rem:name>Quinielón </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+	 <rem:preparedFor organizations = "ORG-0002 "/>
+	 <rem:preparedBy organizations = "ORG-0001 "/>
+<rem:section
+ oid = "SEC-0001">
+<rem:name>
+<rem:ref oid="GLO-0006">Introducción</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0006">
+<rem:name>
+<rem:ref oid="GLO-0006">Introducción</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> El siguiente proyecto que se describe a continuación, está compuesto por tres subsistemas que se complementan uno del otro, la base de todo será una aplicación de escritorio, la segunda se trata de una aplicación para dispositivos inteligentes y la última de una página web, el objetivo de este conjunto de aplicaciones será para la gestión del negocio Quinielas Don Pablito, así como modernizar el modelo de negocio actual, pasando su modo de operación a la era digital, aprovechando al máximo los beneficios que esta conlleva, como por ejemplo, algoritmos que contabilicen los puntos de los <rem:ref oid="GLO-0004">participantes</rem:ref>, dictamine a los que apegados a las reglas del negocio dictamine qué <rem:ref oid="GLO-0004">participantes</rem:ref> son acreedores del premio o una parte de éste. También aprovechar los beneficios de comodidad tanto para los operadores del negocio como para los clientes del mismo, dando practicidad y comodidad de uso, como por ejemplo: el llenado de las quinielas desde la comodidad de la casa del participante y los resultados almacenarlos directamente a la base de datos para su captura casi instantánea.<br/>Por otra parte se podrán comprar quinielas de manera ilimitada sin necesidad de pagar en efectivo obligatoriamente, ya que se cuenta con la posibilidad de realizar pagos mediante moneda electrónica o mediante transacciones bancarias, así de esta manera la versatilidad, comodidad es para con el cliente y los operadores del negocio, entre otros beneficios que incluye la implementación del sistema Quinielón y que se describirán con detalle a lo largo de este documento.  </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0007">
+<rem:name>
+<rem:ref oid="GLO-0007">Alcance</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> <br/>En este proyecto voy a realizar un trío de aplicaciones (llamada Quinielón), la idea de éstas, es expandir el modelo de negocio (Quinielas Don Pablito) que se venía trabajando de origen tradicional, es decir; que en la mayoría de las operaciones requeridas se realizaba a lápiz y papel, negocio que llevando veinticinco años aproximadamente y la única mejora que se ha implementado es la inclusión de hojas de cálculo para la contabilidad de puntos de los <rem:ref oid="GLO-0004">participantes</rem:ref>, y lo que busco con la implementación del sistema Quinielón es llevar su negocio a tecnologías que me permitan incluir páginas web dinámicas, prácticas y que sean atractivas para sus clientes, así también incluir una  versión para dispositivos móviles y así aumentar la versatilidad, interacción y comunicación continua con los clientes, además que permitirá pasar de un negocio local a una más abierto sin límites de distancia, con ello también pretendo poner en práctica los conocimientos que he obtenido durante la transición de mi carrera y que con forme avance ir nutriendo este proyecto hasta terminarlo, con la implementación de todas las funcionalidades, sumando estándares de construcción de software, como: también incluir modelos de calidad, técnicas de pruebas entre otras. <br/>En una etapa inicial los objetivos principales serán:<br/>Poner en práctica lo aprendido en la materia de levantamiento de requisitos, mediante la metodología llamada Rational Unified Process (RUP).<br/>Adquirir la experiencia para una relación óptima con los clientes para llegar a un convenio afectando al producto final y obteniendo como resultado un software de calidad.<br/>La implementación de diagramas para la mejor comprensión del problema  y los casos de uso que de éste deriven (diagramas de casos de uso, diagramas de actividad, entre otros).<br/>Por último generar un documento el cual plasme de manera concisa la mayoría de entregables similar a un desarrollo que se haya hecho profesionalmente.<br/><br/>El sistema constará de tres subsistemas que se complementarán uno con el otro, a continuación describo con brevemente en qué consistirá cada subsistema:<br/><br/>Aplicación de escritorio: Se trata de gestionador de clientes y sus respectivas quinielas, el cual será manipulado por un único rol llamado Administrador, el cual se encargará de realizar las bajas, altas y modificaciones de los <rem:ref oid="GLO-0004">participantes</rem:ref>, así como obtener el los ganadores y  acreedores a una parte (o toda) la bolsa acumulada en esa <rem:ref oid="GLO-0003">jornada</rem:ref>, generar reporte de <rem:ref oid="GLO-0004">participantes</rem:ref> en el cual contenga sus respectivos puntos de cada <rem:ref oid="GLO-0008">quiniela</rem:ref>, las opciones que él marco, así como la de los resultados oficiales.  <br/><br/>Aplicación  móvil: En esta se encontrará con un perfil de usuario que está compuesta por un dominio de usuario (apodo o nombre de pila) y una contraseña con medidas de seguridad como por ejemplo: encriptación. Dentro de esta se podrá administrar las quinielas, tantas como el participante agrega, también podrá visualizar quinielas de jornadas pasadas, así como un historial de la cantidad de premios o bolsas o que ha ganado con anterioridad, la aplicación permitirá al participante ingresar los datos de alguna tarjeta bancaria para la compra de quinielas ó poder hacer el pago directo a su cuenta bancaria de la bolsa o premio ganado, también podrá recibir notificaciones de de los resultados de los partidos, así como programar recordatorios de juegos entre otras ventajas que implica un sistema en un dispositivo móvil.   <br/><br/>Aplicación de web: Esta es muy similar a la de la aplicación móvil ya que prácticamente tiene las mismas funcionalidades que el sistema de la aplicación móvil excepto por funcionalidades que únicamente se pueden agregar a un smartphone o tablet, como por ejemplo: las notificaciones, pero que tendrá ventajas como poder acceder desde cualquier computadora portátil o de escritorio, el objetivo de la implementación de una aplicación es: aumentar la posibilidad de estar en contacto con los <rem:ref oid="GLO-0004">participantes</rem:ref>, ya que si no se pueden conectar mediante un dispositivo móvil poder hacerlo mediante esta otra alternativa.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0013">
+<rem:name>
+<rem:ref oid="GLO-0013">Información del dominio del problema</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Para entender el dominio del problema en la organización Quinielitas Don Vázquez se realizaron únicamente tres técnicas, las cuales son muy sencillas pero que se adaptan a los tiempo de la organización Quinielitas Don Pablito, principalmente se eligieron dos stakeholders: el dueño del negocio: Vázquez Morales Pablo quien tiene ya más de veinte años de experiencia al frente de este negocio. y el segundo me refiero a su hija. quien se encuentra involucrada en el negocio con mayor tiempo, además colaboradora del negocio e inversionista Vázquez Morales Silvia, quien también lleva prácticamente toda su vida en el negocio, puesto que desde que tenía trece años le asignaban responsabilidades al igual que a sus hermanos. Es por ello que se eligieron estas dos personas, aunque la mayoría cumplen semejanza de roles, ya que se turnan y rolan las tareas puesto que el modelo de negocio resulta “adaptarse a ellos”, es decir; que cuando uno no puede realizar la tarea es cubierto por otro de sus hermanos o familiar cercano involucrado en el negocio, por lo que se sustituyen tareas, también es por ello que sólo hice dos entrevistas ya que todos conocen el modelo y el modo de operar del negocio ya que todos tiene experiencia en todos los puestos del negocio por lo que considero que con estas dos entrevistas son suficientes.<br/> <br/>La segunda técnica que se implementó fue la de observación e involucración del negocio. Al ser un negocio familiar no se cuentan con formalidades empresariales, a lo que me refiero es que no se tienen puestos establecidos, tareas o roles específicos, sumando que no se tiene capacitación ni por parte del personal de Quinielas Don Pablito ni de sus clientes (<rem:ref oid="GLO-0004">participantes</rem:ref>), por lo que pedir que describan las tareas y roles que toman en el negocio resulta ser muy caótico, puesto que dan información muy relevante y repetitiva. La técnica de observación resulta ser una mejor opción para la obtención de información, y así poder tener un panorama más amplio del modelo de negocio, sumando enriquecimiento y experiencia del manejo del mismo.<br/> <br/>La tercera y última, pero no menos importante; es la de tormenta de ideas. Para ello se pidió la presencia en su mayoría de los stakeholders, también se solicitó de la manera más atenta la posibilidad de contar con la asistencia de algunos de los clientes (<rem:ref oid="GLO-0004">participantes</rem:ref>) para poder sacar la mayor información posible y tener también más de una perspectiva, es decir: que se tenga el enfoque de parte de los usuarios, ya sea que trabaje en  el negocio o que sea cliente de este, por lo que se logró de la asistencia de tres <rem:ref oid="GLO-0004">participantes</rem:ref>, que por suerte resultaba ser los <rem:ref oid="GLO-0004">participantes</rem:ref> más activos del negocio.<br/><br/>Gracias a la reunión logre inferir, alimentadas por las ideas de los <rem:ref oid="GLO-0004">participantes</rem:ref> y del equipo laboral del negocio Quinielitas Don Pablito, claro está, muchas de las tareas o casos de uso que los subsistemas que complementarán al gestor de escritorio, me refiero a la aplicación montada en un sitio web y a la que vivirá en un dispositivo móvil (Smartphone o tableta).       </rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+<rem:ref oid="GLO-0004">Participantes</rem:ref> En el Proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Organizaciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:organization
+ oid = "ORG-0001">
+<rem:name>
+Dissek Corporation Software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Consultoría de Software. Empresa dedicada a dar soluciones a todo tipo de problemas de carácter informático.  <br/><br/>LEMA: &quot;Las palabras Software &amp;&amp; Hardware pertenecen a la generación del futuro,  de lo cual se ha unido lo viejo con lo nuevo&quot;<br/>  </rem:comments>
+<rem:address>Mirador no. 06, no ext. 360, col. Miravalle, Del. Iztapalapa, Ciudade de México CP 09696.   </rem:address>
+<rem:telephone>5522311958</rem:telephone>
+<rem:fax>N/A</rem:fax>
+</rem:organization>
+<rem:organization
+ oid = "ORG-0002">
+<rem:name>
+Quinielitas Don Pablito</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Apuestas deportivas, mediante especulación de resultados, diviértete y gana tu también cuando gana tu equipo favorito.  </rem:comments>
+<rem:address>Edificio C, Piso 5, Sección de edificios el challo.  Av. De Las Culturas S/N, Delegación Azcapotzalco, Col. El Rosario, 02100 Ciudad de México, CDMX </rem:address>
+<rem:telephone>5591270675</rem:telephone>
+<rem:fax>N/A</rem:fax>
+</rem:organization>
+</rem:section>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Stakeholders</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+Vazquez Morales Pablo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Dueño del negocio de apuestas deportivas (<rem:ref oid="GLO-0008">Quiniela</rem:ref>) y encargado de la organización del negocio, es el stakeholder con mayores prioridades.        </rem:comments>
+<rem:stakeholderRole>Gestionador de la organización y dueño.</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+Chávez Morelos Noé Baldemar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Encargado elaborar la Elicitación del proyecto.</rem:comments>
+<rem:stakeholderRole>Ingeniero de Software</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Vazquez Morales Silvia </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Trabajadora que se encarga de realizar el registro de los resultados de cada <rem:ref oid="GLO-0008">quiniela</rem:ref> realizada en cada semana. Se registran en el software Microsoft Excel. </rem:comments>
+<rem:stakeholderRole>Encargada de registrar resultados obtenidos en las quinielas. </rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Vazquez Cordero Manuel</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Trabajador que realiza la distribución de quinielas, así como la distribución de la bolsa, en ocasiones realiza el llenando en el archivo Excel de algunos de los datos de los <rem:ref oid="GLO-0004">participantes</rem:ref>.</rem:comments>
+<rem:stakeholderRole>Encargado de distribuir quinielas y bolasas</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0005">
+<rem:name>
+Juanita Barco Morelos </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Realiza la recolección de los resultados de cada partido de esa <rem:ref oid="GLO-0003">jornada</rem:ref> en cuestión apuntándolos en un cuaderno para después poder verificar los resultados puestos por cada participante. </rem:comments>
+<rem:stakeholderRole>Recolectora de información de los resultados de todos los partidos.</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0005">
+<rem:name>
+Descripción del Sistema Actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0020">
+<rem:name>
+<rem:ref oid="GLO-0015">Pros y contras de la situación actual</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:section
+ oid = "SEC-0021">
+<rem:name>
+Fortalezas de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0016">
+<rem:name>
+<rem:ref oid="GLO-0016">Fortalezas de la situación actual </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Una de las fortalezas que podría rescatar de la organización “Quinielas Don Pablito”, es la confianza que se tienen entre ellos, al ser la mayoría familiares los errores se resaltan sin conflicto alguno, esto resulta ser provecho en el sentido que se puede rescatar información de ello con una mayor fiabilidad, ya que no existe presión sobre despidos de personal por dar información o publicar errores frecuentes que se cometen, y que es posible reducir éstos mediante un software que ayude a estas necesidades de la gestión de las quinielas.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0015">
+<rem:name>
+<rem:ref oid="GLO-0015">Pros y contras de la situación actual</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este apartado explico brevemente la situación actual del modelo de negocio de “Quinielitas Don Pablito”, primordialmente hay que entender que se trata de una pequeño negocio, que está formado principalmente por familiares, al ser una “empresa” chica, con sentido en negocio local, es decir; que sólo es con personas conocidas o recomendadas, en este sentido también aplica para los clientes (<rem:ref oid="GLO-0004">participantes</rem:ref>), con esto, quiero dar a entender que el producto que mi cliente brinda, no es abierta para todo público, esto influye a que no cuenta con un modelo de negocio estándar, por lo que la organización dentro de ella es casi nula, los roles no se encuentran establecidos como tal, y al hacer todo a “mano” con lápiz y papel, se vuelve una tarea muy engorrosa y sobre todo desgastante.<br/></rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0022">
+<rem:name>
+<rem:ref oid="GLO-0017">Debilidades de la situación actual</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0017">
+<rem:name>
+<rem:ref oid="GLO-0017">Debilidades de la situación actual</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Principalmente la debilidad de la organización y del modelo de negocio de “Quinielas Don Pablito”, es que al tener una mala gestión de su negocio se invierte mucho tiempo en procesos de las quinielas, es decir; que las tareas que se deben de realizar para el funcionamiento del negocio llevan más tiempo del necesario o del asignado, también al contar con personal de confianza, y con esta palabra me refiero a personal que son familiares, la continuidad de trabajo es muy baja, es decir; que no son constantes en sus roles asignados, ya que pueden tomar un rol, es decir; un conjunto de actividades a realizar en una semana pero para la siguiente podría ni siquiera estar ayudando en alguna otra operación que el negocio requiera ser realiza.  </rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0023">
+<rem:name>
+Modelos de procesos de negocio actuales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0018">
+<rem:name>
+<rem:ref oid="GLO-0018">Modelos de procesos de negocio actuales  </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Los procesos del negocio quinielon son muy sencillos, básicamente son mecánicos, es decir; que rara vez (por no decir nunca) surge un cambio, la cual listo a continuación.<br/><br/>Se reparten las quinielas a todos los <rem:ref oid="GLO-0004">participantes</rem:ref>, es muy común que estos compren más de una, en algunos casos los <rem:ref oid="GLO-0004">participantes</rem:ref> que viven cercas van al negocio de “Quinielas Don Pablito” a recoger las quinielas.<br/>Se reciben todas las quinielas repartidas de los <rem:ref oid="GLO-0004">participantes</rem:ref> con las respuestas que éstos creen que será el ganador de cada partido que compone la <rem:ref oid="GLO-0003">jornada</rem:ref>(L: Local, V: visitante, E: empate).<br/> <br/>Se contabiliza todo el dinero recolectado de las quinielas, cada <rem:ref oid="GLO-0008">quiniela</rem:ref> tiene un costo de veinticinco pesos, de aquí se quita el quince por ciento que corresponde a la ganancia de la organización Quinielas Don Pablito.  <br/>Los datos de las quinielas, así como la información de su correspondientes <rem:ref oid="GLO-0004">participantes</rem:ref>  se vacean en el archivo de excel.<br/>Al finalizar todos los partidos que corresponden a la <rem:ref oid="GLO-0003">jornada</rem:ref> en cuestión (nueve en total) se vacean todos los resultados oficiales al archivo de excel, posteriormente el archivo de excel contabiliza los puntos realizados para cada participante y los acomoda de mayor a menor puntaje.<br/>Cuando se tienen los <rem:ref oid="GLO-0004">participantes</rem:ref> acreedores a la bolsa acumulada del premio se reparte equitativamente entre ellos (las reglas de los puntajes se describen en las reglas del negocio).<br/>Se genera un reporte de los puntos de cada <rem:ref oid="GLO-0008">quiniela</rem:ref> y se entrega a su correspondiente participante, en este reporte también tienen el nombre (o apodo) de cada cliente (participante) que participaron en la acumulación de la bolsa, así como los puntos y las variables (L, E o V) de cada una de sus correspondientes quinielas.<br/>los procesos anteriores se realizan por cada <rem:ref oid="GLO-0003">jornada</rem:ref>.<br/></rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0006">
+<rem:name>
+Objetivos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0016">
+<rem:name>
+Aplicación de Escritrio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+ Estos objetivos hacen referencia sólo a los del sistema de escritorio.</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+<rem:objective
+ oid = "OBJ-0001">
+<rem:name>
+Dar de alta un participante </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0003 "/>
+<rem:comments>
+Datos para dar de alta a un participante: nombre, primer apellido, apodo (opcional), edad.</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+dar de alta a un participante</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0002">
+<rem:name>
+Almacenar quinielas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+almacenar las quinielas de cada participante en la base de datos.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0003">
+<rem:name>
+Cuenta de participante </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+generar una cuenta de usuario para cada participante</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0004">
+<rem:name>
+Cobro Electrónico de <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+realizar el cobro de cada <rem:ref oid="GLO-0008">quiniela</rem:ref> en caso de elegir pagos electrónicamente</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0005">
+<rem:name>
+Informe compra de <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 "/>
+<rem:comments>
+Datos del informe de compra: nombre del participante (incluye apellido), apodo (si tiene), número total de quinielas, forma de pago. </rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+de informar de la compra de cada <rem:ref oid="GLO-0008">quiniela</rem:ref> así como su modo de pago y los datos del participante.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0006">
+<rem:name>
+Recibir datos de compra mediante aplicación móvil</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Se vincula con el objetivo Envía de datos a aplicación de escritorio.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+recibir los datos de la compra de quinielas de la cuenta de cada participante desde una aplicación móvil.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0007">
+<rem:name>
+Recibir datos de compra mediante aplicación WEB</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Se vincula con el objetivo Envía de datos a aplicación de escritorio</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+recibir los datos de la compra de quinielas de la cuenta de cada participante desde una página web.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0008">
+<rem:name>
+Almacenar <rem:ref oid="GLO-0008">quiniela</rem:ref> en base de datos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Datos de cada <rem:ref oid="GLO-0008">quiniela</rem:ref>: equipo elegido en cada partido: local (L), visitante (V) o empate (E).<br/><br/>El plazo máximo para la compra de las quinielas es el viernes de cada semana hasta las 11:59pm <br/><br/>El costo de cada <rem:ref oid="GLO-0008">quiniela</rem:ref> es de 25 pesos mexicanos<br/></rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+almacenar los datos de todas las quinielas correspondiente a cada participante en la base de datos.<br/><br/></rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0009">
+<rem:name>
+Dar de baja a particípate</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Se comunicará con la base de datos eliminando al participante de ésta.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+Dar de baja a particípate</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0010">
+<rem:name>
+Actualizar datos de participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Se conectará a la base de datos y podrá actualizar lo siguiente:<br/>Datos a poder actualizar: nombre, <rem:ref oid="GLO-0002">fecha</rem:ref> de nacimiento, apodo, contraseña, apellido paterno, número de cuenta.<br/></rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+actualizaciones con respecto cada participante</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0011">
+<rem:name>
+Consultar resultados oficiales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Marcaje (goles) de cada partido del total de los nueve jugados en la <rem:ref oid="GLO-0003">jornada</rem:ref> correspondiente..</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+El sistema deberá obtener los resultados de cada equipo de la página web oficial de la <rem:ref oid="GLO-0014">FMF</rem:ref>.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0012">
+<rem:name>
+Desechar <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+El sistema eliminará de manera automática cada <rem:ref oid="GLO-0008">quiniela</rem:ref> que no sea pagada.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0013">
+<rem:name>
+Contabilizar bolsa acumulada</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+calcular la bolsa acumulada de las quinielas.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0014">
+<rem:name>
+Contabilizar ganancia para el negocio  </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0003 "/>
+<rem:comments>
+16% del total de la bolsa acumulada es la ganancia del negocio</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+calcular la ganancia correspondiente para el negocio </rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0015">
+<rem:name>
+Generar informe de ganadores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0001 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Datos del informe: Nombre, apodo, puntos obtenidos, puntos oficiales, bola acumulada ganadora, tipo de pago: electrónico o efectivo,  total de <rem:ref oid="GLO-0004">participantes</rem:ref>, total de quinielas, total de bolsa acumulada, puntos realizados (poder visualizar valores marcadas por el participante).  <br/><br/>También deberá mandar el informe al resto de subsistemas.<br/></rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+generar un informe sobre el monto de dinero ganado por cada participante acreedor a éste.</rem:description>
+</rem:objective>
+</rem:section>
+<rem:section
+ oid = "SEC-0017">
+<rem:name>
+Aplicación Móvil</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+Estos objetivos hacen referencia sólo a los de aplicación móvil.</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+<rem:objective
+ oid = "OBJ-0016">
+<rem:name>
+gestionar las quinielas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 "/>
+<rem:comments>
+El sistema se encargará de ver las quinielas que tiene el participante activo, es decir; la <rem:ref oid="GLO-0003">jornada</rem:ref> no se ha jugado.</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+gestionar las quinielas</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0017">
+<rem:name>
+Crear un Perfil</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Datos: identificador de usuario (apodo o nombre de pila), contraseña (ocho caracteres mínimo, incluir mayúsculas, números y símbolos).</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+crear un perfil de un participante</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0018">
+<rem:name>
+Dar de Alta Tarjetas Bancaria</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Datos: número de cuenta, nombre de cuentahabiente, clave de ingreso, tipo de tarjeta bancaria (Crédito, débito o de puntos electrónicos PayPal).<br/></rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+dar de alta tarjetas bancarias del participante.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0019">
+<rem:name>
+Crear un Perfil</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Datos: identificador de usuario (apodo o nombre de pila), contraseña (ocho caracteres mínimo, incluir mayúsculas, números y símbolos).<br/></rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+crear un perfil de un participante</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0020">
+<rem:name>
+Comunicar con el sistema del banco</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+El fin de comunicarse con el sistema bancario, es para verificar que exista una cuenta asociada a ese participante.<br/></rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+El sistema deberá comunicarse con el sistema del banco asociada a cada tarjeta bancaría dada de alta. </rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0021">
+<rem:name>
+Consultar a base de datos.</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+Deberá comunicarse para poder consultar partidos,  quinielas, historial de participante, entre otras, así como para actualizar datos o eliminar datos.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+comunicarse con la base de datos para consultas.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0022">
+<rem:name>
+Comunicar Con Sitio Web de la <rem:ref oid="GLO-0014">FMF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+comunicarse con la página oficial del sitio web de la <rem:ref oid="GLO-0014">FMF</rem:ref> para dar información de partidos a jugar o jugados.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0023">
+<rem:name>
+Notificar resultados de partidos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+mandar una notificación de los resultados de cada partido.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0024">
+<rem:name>
+Generar un Recordatorio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+ generar un recordatorio mediante una notificación de uno o más juegos específicos.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0025">
+<rem:name>
+realizar pago con tarjeta bancaria</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+realizar pagos mediante alguna tarjeta bancaria asociada a la cuenta del participante.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0026">
+<rem:name>
+Notificar ganancia de <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+El sistema deberá notificar del premio o bolsa acumulada correspondiente al participante sí es acreedora a ésta.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0027">
+<rem:name>
+Mostrar <rem:ref oid="GLO-0008">Quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+El sistema no permitirá incluir quinielas en horarios de 11:59pm del viernes a domingo 11:59pm, correspondiente a la semana de esa <rem:ref oid="GLO-0003">jornada</rem:ref>. <br/><br/>Datos de plantilla de <rem:ref oid="GLO-0008">quiniela</rem:ref>: salida: <rem:ref oid="GLO-0002">fecha</rem:ref>, <rem:ref oid="GLO-0003">jornada</rem:ref>, y costo. De entrada: los valores del participante (nueve).<br/><br/>Nota: no se podrán jugar dobles ni triples.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+mostrar una plantilla de <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0028">
+<rem:name>
+Cancelar <rem:ref oid="GLO-0008">Quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+El sistema no permitirá incluir quinielas hasta haberse acreditado el pago de cada <rem:ref oid="GLO-0008">quiniela</rem:ref></rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0029">
+<rem:name>
+Generar un Informe </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Datos del informe: datos de la <rem:ref oid="GLO-0003">jornada</rem:ref> actual; bolsa acumulada, ganadores, puntos máximos, valores reales y valores del participante.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+El sistema deberá de generar un informe a cada participante de la <rem:ref oid="GLO-0003">jornada</rem:ref> actual o anterior.</rem:description>
+</rem:objective>
+</rem:section>
+<rem:section
+ oid = "SEC-0018">
+<rem:name>
+Aplicación WEB</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0001 STK-0003 "/>
+<rem:comments>
+Estos objetivos hacen referencia sólo a los de la aplicación web.</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.3 </rem:number>
+<rem:objective
+ oid = "OBJ-0030">
+<rem:name>
+Autentificar Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+ identificar al participante mediante una contraseña y usuario.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0031">
+<rem:name>
+Gestionar las Quinielas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+gestionar las quinielas</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0032">
+<rem:name>
+Dar de Alta Tarjetas Bancaria</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+de dar de alta tarjetas bancarias.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0033">
+<rem:name>
+Avisar Alta de Tarjeta Bancaria</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+ mandar una notificación de los resultados de cada partido vía email.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0034">
+<rem:name>
+Notificar Vía Email</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+ comunicar mediante vía email que se ha dado de alta una tarjeta bancaria.<br/><br/>comunicar mediante vía email que se ha dado de alta una tarjeta bancaria.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0035">
+<rem:name>
+Conectar con la Base de Datos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+comunicarse con la base de datos para consultas.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0036">
+<rem:name>
+Consultar con WEB <rem:ref oid="GLO-0014">FMF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0001 "/>
+<rem:comments>
+El sistema  se conectará a la página web de la federación mexicana de fútbol  (<rem:ref oid="GLO-0014">FMF</rem:ref>) para  mostrar en pantalla partidos y fechas de los partidos individuales o por <rem:ref oid="GLO-0003">jornada</rem:ref>.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+Comunicarse con la página oficial del sitio web para dar información de partidos a jugar o jugados.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0037">
+<rem:name>
+Enviar Notificación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+generar un recordatorio enviado a email del participante.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0038">
+<rem:name>
+Realizar Pago Electrónico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+El sistema deberá realizar pagos mediante alguna tarjeta bancaria asociada a la cuenta del participante.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0039">
+<rem:name>
+Notificar Premio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+El sistema deberá notificar del premio o bolsa acumulada correspondiente al participante sí es acreedora a ésta.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0040">
+<rem:name>
+Mostrar Pantalla</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0003 "/>
+<rem:comments>
+Datos de plantilla de <rem:ref oid="GLO-0008">quiniela</rem:ref>: salida: <rem:ref oid="GLO-0002">fecha</rem:ref>, <rem:ref oid="GLO-0003">jornada</rem:ref>, y costo. De entrada: los valores del participante (nueve).</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+mostrar una plantilla de <rem:ref oid="GLO-0008">quiniela</rem:ref> para que el participante pueda llenarla.</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0041">
+<rem:name>
+Generar Reporte</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 STK-0003 "/>
+<rem:comments>
+Datos del informe: datos de la <rem:ref oid="GLO-0003">jornada</rem:ref> actual; bolsa acumulada, ganadores, puntos máximos, valores reales y valores del participante.</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:description>
+ generar un reporte a cada participante correspondiente a la <rem:ref oid="GLO-0003">jornada</rem:ref> transcurrida.</rem:description>
+</rem:objective>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0007">
+<rem:name>
+Requisitos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+Requisitos de información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.1 </rem:number>
+<rem:informationRequirement
+ oid = "IRQ-0001">
+<rem:name>
+Nombre de participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:relevantConcept>
+Se rediere al nombre de pila del participante </rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0002">
+<rem:name>
+Apodo de Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:relevantConcept>
+Este será tambien el nombre de l acuenta de cada participante</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0003">
+<rem:name>
+<rem:ref oid="GLO-0002">Fecha</rem:ref> de nacimiento </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+<rem:ref oid="GLO-0002">Fecha</rem:ref> de natalico del participante</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0004">
+<rem:name>
+Contraseña</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0004 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:relevantConcept>
+combinación de alfanumerica, para ingresar a la plataforma Quinielon WEB y Móvil, sólo el participante la sabe.</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0005">
+<rem:name>
+Apellido paterno </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:relevantConcept>
+apellido heredado de parte de su padre del participante,</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0006">
+<rem:name>
+Apellido MAterno</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:relevantConcept>
+Apellido heredado de parte de la madre del participante.</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+</rem:informationRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Requisitos funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.2 </rem:number>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Diagramas de casos de uso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>5.2.1 </rem:number>
+</rem:section>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Definición de actores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>5.2.2 </rem:number>
+<rem:actor
+ oid = "ACT-0001">
+<rem:name>
+Administrador</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>el conjunto de actividades que realizará este actor resultan ser en su mayoría todas las asociadas con la aplicación de escritorio, la cual es el actor con mayores privilegios en todo el sistema, es decir; que podrá dar altas, bajas, modificaciones tanto de <rem:ref oid="GLO-0004">participantes</rem:ref> como de quinielas.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>ser el porqué de todo el sistema y el negocio en general, ya que este es el comprador de las quinielas, Tiene relación con los programas complementarios  que son la aplicación móvil y la aplicación en plataforma WEB.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0003">
+<rem:name>
+DBMS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0005 "/>
+<rem:comments>
+El manejador de base de datos a utilizar será el de MySQL, ya que fue petición de la profesara de la  matria de análisis de requisitos.</rem:comments>
+<rem:actorRole>es la base de la información de todo el modelo de negocio, aquí se incorpora la información de: reportes, quinielas, <rem:ref oid="GLO-0004">participantes</rem:ref>, bolsa acumulada, ganancia para la organización Quinielas Don pablito, entre otras. También es el actor que interactúa con los tres sistemas en paralelo, es decir: que tiene relación con la aplicación gestor de escritorio, con la aplicación móvil y con la aplicación en plataforma WEB.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0004">
+<rem:name>
+WEB <rem:ref oid="GLO-0014">FMF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>es el que interactúa con los sistemas para obtener información certera y de confianza, es básicamente para consultas, como por ejemplo: resultado de juegos de una <rem:ref oid="GLO-0003">jornada</rem:ref> en específico, capacidad de  total de estadio, lugar de ubicación y de qué equipo es sede, es decir: “su casa de juego”.</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0005">
+<rem:name>
+Sistema Bancario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 STK-0003 "/>
+<rem:comments>
+Se aceptarán tarjetas de pagos electrónicos como Paypal, entre otras.</rem:comments>
+<rem:actorRole>a una organización bancaria, que interactúa con el sistema quinielon para realizar transacciones de pago y depositos de manera automática, para ello es necesario que el participante habilite esta forma de pago dando de alta una tarjeta de débito, crédito o de monedero electrónico.</rem:actorRole>
+</rem:actor>
+</rem:section>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Casos de uso del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>5.2.3 </rem:number>
+<rem:useCase
+ oid = "UC-0001">
+<rem:name>
+Gestionar Bolsa </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>28</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+Este caso de uso Muestra una interface, la cual tendrá en la pantalla principal un menú el cual el administrador podrá dar clic en dos opciones primordiales: Obtener Bolsa Acumulada y Obtener Ganancia de Negocio.</rem:triggeringEvent>
+<rem:precondition>
+Ninguna</rem:precondition>
+<rem:postcondition>
+Sé ejecutará el caso de uso Obtener Bolsa Acumulada ó Obtener Ganancia de Negocio</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0001">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+inicia la aplicación de escritorio </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0002">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema mostrará la pantalla principal con la <rem:ref oid="GLO-0002">fecha</rem:ref> (día-mes-año), en el centro logo de empresa.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0003">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+<br/>En la parte superior se carga dos opciones: Obtener Bolsa Acululada y Obtener Ganancia del negocio.<br/></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Obtener Bolsa Acumulada</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0005"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+En este caso de uso se obtendrá la bolsa acumulada, es decir: todo el dinero que se reúna de las quinielas que meten los <rem:ref oid="GLO-0004">participantes</rem:ref>.</rem:triggeringEvent>
+<rem:precondition>
+haber disparado el caso de uso UC-0001</rem:precondition>
+<rem:postcondition>
+Se disparará el caso de uso UC-0004</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0004">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema se conectará a la base de datos</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0005">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema Disparará el caso de uso UC-0004.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0006">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema almacenará la cantidad de la bolsa acumulada que se obtenga en el pso 2. <br/></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0007">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+<br/>El sistema calculará el monto de ganancia para la organización Quinielas Don Pablito que es el 15% de toda la bolsa acumulada. <br/></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0008">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema restará el valor calculado en el paso 4 al valor obtenido en el paso 3.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0009">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+<br/>El sistema mostrará en pantalla principal el valor calculado en el paso 5.<br/><br/></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0003">
+<rem:name>
+Obtener Ganancia de Negocio </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+Este caso de uso obtiene la cantidad que la organización Quinielas Don Pablito obtienen como ganancia en un <rem:ref oid="GLO-0003">jornada</rem:ref>. </rem:triggeringEvent>
+<rem:precondition>
+haber disparado el caso de uso UC-0001</rem:precondition>
+<rem:postcondition>
+Ninguna</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0011">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema se conectará a la base de datos, por lo que disparará el caso de uso CU-04 y obtendrá la bolsa acumulada.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+surge un error al comunicarse con el DBMS, entonces se lanzará un aviso: que la conexión con la base de datos no fue exitosa, tendrá también dos botones el cual digan: Volver a intentar conexión o salir. <br/></rem:condition>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Intentar nuevamente o intenar más tarde.</rem:description>
+</rem:actorAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0012">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema almacenará momentáneamente la cantidad obtenida en el paso 1. </rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0013">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+<br/>El sistema realizará el cálculo de la ganancia para la organización Quinielas Don Pablito, la cual consta del 15% del total de la bolsa obtenida en el paso 2<br/></rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0014">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema mostrará en pantalla la cantidad calculada en el paso 3.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0004">
+<rem:name>
+Comunicar con DBMS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+Este Caso de uso se disparará cada vez que los caso de uso CU-02 y CU-03 requieran de consultar alguna información en la base de datos asociada al sistema Quinielon.</rem:triggeringEvent>
+<rem:precondition>
+Disparar alguna de los casos de uso UC-0002 o UC-0003. </rem:precondition>
+<rem:postcondition>
+No aplica</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0015">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema como entrada el disparo de el caso de uso UC-0002 o UC-0003.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0016">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema comunicará con la base de datos, par obtener información.   </rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0017">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+El sistema almacenará momentáneamente la información obtenida en el paso 2. </rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0005">
+<rem:name>
+Gestionar Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se activará cuando el administrador del sistema de clic en el botón de la pantalla principal del programa de escritorio Gestionar <rem:ref oid="GLO-0004">Participantes</rem:ref>, el cual nos permitirá ver otras opciones más, cómo: la acción de los casos de uso siguientes: UC-0007,UC-0008, UC-0009, UC-0010.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Consultar Participante.</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se disparará con la previa utilización del caso de uso CU-05, La tarea que realiza es mostrar una lista de todos los <rem:ref oid="GLO-0004">participantes</rem:ref> que compraron al menos una <rem:ref oid="GLO-0008">quiniela</rem:ref> en la <rem:ref oid="GLO-0003">jornada</rem:ref> en cuestión.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+Actualizar Datos del Participante. </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso actualizará los datos de cada participante, como: nombre, apodo, tarjeta bancaria, <rem:ref oid="GLO-0002">fecha</rem:ref> de nacimiento, entre otros datos, que se especifican a detalle cuando se realice la versión paso a paso. </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0008">
+<rem:name>
+Eliminar Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso eliminará a uno o varios <rem:ref oid="GLO-0004">participantes</rem:ref>, por lo cual se conectará a la base de datos disparando el caso de uso CU-11 para la actualización de la base de datos.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0009">
+<rem:name>
+Dar de Alta Participante </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso dará de alta a un participante, con todos sus atributos que éste requiera, para posteriormente almacenarlo en la base de datos, por lo cual se disparar el caso de uso UC-0011  </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0010">
+<rem:name>
+Obtener Informe de Ganadores  </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se disparará al utilizar el caso de uso UC-0006, y la terea es que listará a los <rem:ref oid="GLO-0004">participantes</rem:ref> ganadores a una parte de la bolsa acumulada.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0011">
+<rem:name>
+Comunicar Con DBMS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se disparará después de realizar cualquier acción mediante los casos de uso siguientes: CU-07, CU-08, CU-09, CU-010, la tarea primordial es: consultar, actualizar o eliminar información de la base de datos.  </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0012">
+<rem:name>
+Gestionar <rem:ref oid="GLO-0008">Quiniela</rem:ref>  </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+El sistema muestra en pantalla principal la opción de gestionar <rem:ref oid="GLO-0008">quiniela</rem:ref> mediante un botón, las tareas de este caso de uno es poder ejecutar los siguientes  casos de uso: UC-0013, UC-0014, UC-0015,UC-0016, UC-0017</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0013">
+<rem:name>
+Realizar Compra de <rem:ref oid="GLO-0008">Quiniela</rem:ref> </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se utilizará cuando el administrador ingrese una <rem:ref oid="GLO-0008">quiniela</rem:ref> de un participante que es pagada en efectivo, de manera automática se dispara el caso de uso UC-0018.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0014">
+<rem:name>
+Obtener Datos de Compra de <rem:ref oid="GLO-0008">Quiniela</rem:ref> </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso interactúa con  la base de datos asociada al software Quinielon, la tarea principal es obtener todas las quinielas compradas desde ambas plataformas que complementan al software, las cuales son dos: sistema Quinielon WEB y sistema Quinielon Móvil. </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0015">
+<rem:name>
+Obtener Resultados Oficiales </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se comunica con con la página web de la federación mexicana de futbol (<rem:ref oid="GLO-0014">FMF</rem:ref>), para obtener los resultados oficiales de los juegos correspondientes a la <rem:ref oid="GLO-0003">jornada</rem:ref> en cuestión, este caso de uso también dispara el siguiente caso de uso: UC-00020. </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0016">
+<rem:name>
+Obtener Resultado de Participante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0004 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso interactúa con el administrador y el manejador de la base de datos asociada al software Quinielon, su atra es obtener los resultados, que cada participante lleno en su plantilla de <rem:ref oid="GLO-0008">quiniela</rem:ref> (todas las que haya comprado).  </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0017">
+<rem:name>
+Obtener Quinielas Ganadoras  </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso realiza la tarea de mostrar en pantalla principal todas las quinielas que tienen mayor puntaje, por lo que son acreedoras a un (o toda) parte de la bolsa acumulada,  la consulta la hace de manera directa en la base de datos asociada al software Quinielon. </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0018">
+<rem:name>
+Informar de Compra de <rem:ref oid="GLO-0008">Quiniela</rem:ref>.</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso tiene como tarea avisar a los <rem:ref oid="GLO-0004">participantes</rem:ref> mediante una notificación, por lo que se comunica con el sistema Quinielon WEB, el cual manda un email al participante y una notificación emergente o flotante para el sistema Quinielon Móvil, este caso de uso también dispara de manera automática el siguiente caso de uso: UC-0019.  </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0019">
+<rem:name>
+Almacenar <rem:ref oid="GLO-0008">Quiniela</rem:ref> en DBMS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso Almacena en la base de datos la compra de una <rem:ref oid="GLO-0008">quiniela</rem:ref>. </rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0020">
+<rem:name>
+Guardar Datos Oficiales  </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>29</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:triggeringEvent>
+Este caso de uso se comunica directamente con la base de datos asociada al software Quimileon, y su tarea principal en almacenar en base de datos la información obtenida en el caso de uso UC-0015.</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+</rem:useCase>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0014">
+<rem:name>
+Glosario de términos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0002">
+<rem:name>
+<rem:ref oid="GLO-0002">Fecha</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Hace referencia a una <rem:ref oid="GLO-0003">jornada</rem:ref>       </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0003">
+<rem:name>
+<rem:ref oid="GLO-0003">Jornada</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Partidos que se disputan en un torneo (<rem:ref oid="GLO-0011">Apertura</rem:ref> o <rem:ref oid="GLO-0012">Clausura</rem:ref>) de la Liga Mexicana de Fútbol Profesional, la cual sólo consta de 9 partidos, que comprenden la <rem:ref oid="GLO-0009">liguilla</rem:ref> únicamente, excluyendo <rem:ref oid="GLO-0010">octavos de final</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0004">
+<rem:name>
+<rem:ref oid="GLO-0004">Participantes</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Persona que rellena una <rem:ref oid="GLO-0008">quiniela</rem:ref> </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0008">
+<rem:name>
+<rem:ref oid="GLO-0008">Quiniela</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> formato impreso en la cual el cliente o participante llena según su criterio. éste solo puede marcar un sólo resultado por cada partido (nueve en total), la respuesta consta de tres posibilidades E: empate, V: visitante y L: local.<br/><rem:ref oid="GLO-0002">Fecha</rem:ref>: Hace referencia a una <rem:ref oid="GLO-0003">jornada</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0009">
+<rem:name>
+<rem:ref oid="GLO-0009">Liguilla</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Sistema de competición deportiva.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0010">
+<rem:name>
+<rem:ref oid="GLO-0010">Octavos de final</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> se refiere a la disputa por ganar el torneo de los últimos ocho equipos clasificados.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0011">
+<rem:name>
+<rem:ref oid="GLO-0011">Apertura</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0004 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Contempla a las jornadas jugadas durante los meses de febrero a mayo.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0012">
+<rem:name>
+<rem:ref oid="GLO-0012">Clausura</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Contempla a las jornadas jugadas durante los meses de julio a noviembre.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0014">
+<rem:name>
+<rem:ref oid="GLO-0014">FMF</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>5</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0002 "/>
+<rem:comments>
+La Federación Mexicana de Fútbol Asociación, A.C., también conocidad como FEMEXFUT o simplemente <rem:ref oid="GLO-0014">FMF</rem:ref>, es el organismo rector del fútbol en México; es la institución y cuerpo responsable de la organización, la validación y reglamentación de competencias, clubes, jugadores y árbitros a nivel profesional y amateur del fútbol en dicho país. </rem:comments>
+<rem:text>Federación mexicana de futbol.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0015">
+<rem:name>
+Apéndice</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>7 </rem:number>
+<rem:meeting
+ oid = "MET-0001">
+<rem:name>
+Negociación del Convenio Proyecto &quot;El Quinielon&quot; </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+<rem:time>
+<rem:hour>23</rem:hour>
+<rem:minute>25</rem:minute>
+</rem:time>
+<rem:place>Domicilio de la Organización ORG-0001</rem:place>
+<rem:results>Se otorga luz por parte del dueño (STK-0001) de la organización ORG-0002 para realizar el proceso de levantamiento de requisitos para el desarrollo  del proyecto &quot;El Quinielón&quot;, el cual se adecuará  a las necesidades de la organización ORG-0002. Ésta misma ha otorgado a la organización ORG-0001 ha elaborar dicha elicitación, concediendo todas la facilidades posibles, así como la información necesaria para dicho propósito, para posteriormente pasar a la fase de desarrollo una vez estén de acuerdo ambas organizaciones con la elicitación.</rem:results>
+	<rem:attenders stakeholders ="STK-0002 STK-0001 "/>
+</rem:meeting>
+<rem:paragraph
+ oid = "PRG-0005">
+<rem:name>
+Fuente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>http://www.femexfut.org.mx/#/</rem:text>
+</rem:paragraph>
+<rem:meeting
+ oid = "MET-0002">
+<rem:name>
+Primera Entrevista</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>10</rem:day>
+</rem:date>
+<rem:time>
+<rem:hour>13</rem:hour>
+<rem:minute>37</rem:minute>
+</rem:time>
+<rem:place>Oficinas Quinielas Don Pablito</rem:place>
+<rem:results>Entendimiento del problema basado a la encuesta. <br/>Entonces uno de los principales problemas con lo cual afronta en estos últimos días es que debido al exceso de datos de las quinielas de los <rem:ref oid="GLO-0004">participantes</rem:ref>, no la da tiempo de verificar de manera que se cerciore de que no exista ningún error a la hora de introducir los datos a la hoja de cálculo de excel, por otra parte; el desgaste que conlleva esto debido a que tiene que desplazarse distancias consideradas para cumplir con sus labores dentro en su negocio, por lo que pude observar, no sólo le lleva tiempo introducir los datos a la hoja de cálculo, sino que también verificar los datos de alguna fuente confiable, también logró observar que hay una limitación en cuanto a sus ganancias, ya que aunque usted menciona que no hay límite para la compra de quinielas, he logrado observar que nunca pasan de diez, debido a que sus cliententes de alguna manera están concientizados que la carga de trabajo es mucha, por lo que ellos se limitan a sólo la compra de máximo diez quinielas, otro problema que logró observar es que no siempre dispone de su vehículo para desplazarse con comodidad, lo que lo obliga a utilizar transporte público o en el peor de los caso taxi, aumentando considerablemente el tiempo de entrega de las quinielas, y disminuyendo el margen de ganancia real.                <br/> <br/>Sugerencias de solución, basadas en el problema analizado.<br/>La solución que veo más factible para su problema es un sistema gestionador en cual pueda ejecutar en su máquina de escritorio, el cual sea capaz de realizar operaciones básicas como, altas, bajas actualizaciones para quinielas y para participates tenga una operación más agregada que sería eliminar participante, para cubrir la posibilidad que cuando un participante ya no quiera seguir en la próxima <rem:ref oid="GLO-0008">quiniela</rem:ref> se pueda eliminar. También observó que guarda un historial de <rem:ref oid="GLO-0004">participantes</rem:ref> anteriores, por lo que es conveniente tener una base de datos que tenga esos historiales almacenados, y serviría para obtener datos necesarios para la gestión, obtener los datos necesarios y se visualizan en el sistema de escritorio, así como agregar el cálculo de los gastos que conlleva todo la operación, es decir; mostrar ganancias reales y monto de premios, para agilizar la captura de las quinielas podemos hacer uso de hardware externo, por ejemplo un dispositivo móvil, ya que aproximadamente 95% de los <rem:ref oid="GLO-0004">participantes</rem:ref> cuentan con dispositivo móvil inteligente, en el cual puedan ingresar los datos correspondientes que requiera cada <rem:ref oid="GLO-0008">quiniela</rem:ref>, y así también se disminuirá consideradamente el desplazó para entregar las mismas. Para el resto que no cuenta con un dispositivo inteligente podemos utilizar una plataforma web(mediante internet), también el sistema permitirá el llenado de quinielas de manera tradicional, es decir; con la posibilidad de que usted pueda ingresar los datos de manera manual, inclusive podemos colocar transacciones por vía de pagos electrónicos a tarjetas de créditos, débito, sistemas de pago con moneda virtual (ejemplo: Paypal) o micropagos en tiendas como oxxo, seven, aldo, BBB, entre otras, esta última opción puede ser considerada, para una futura actualización cuando el negocio sea más robusto.</rem:results>
+	<rem:attenders stakeholders ="STK-0001 "/>
+</rem:meeting>
+<rem:meeting
+ oid = "MET-0003">
+<rem:name>
+Segunda Entrevista</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+<rem:time>
+<rem:hour>2</rem:hour>
+<rem:minute>3</rem:minute>
+</rem:time>
+<rem:place>Oficinas de Quinielas Don Vazquez</rem:place>
+<rem:results>Entendimiento del problema basado a la encuesta. <br/>Bueno Entonces el problema que veo y que es un factor común en todo lo que usted me ha mencionado es que el tiempo que tardan en entregar los premios es muy tedioso y estresante, otro problema es que puede haber fallas al ingresar los puntos de las quinielas de los <rem:ref oid="GLO-0004">participantes</rem:ref> y bueno adicional el miedo que le provoca el salir a la calle con el efectivo que corresponde a los premios y supongo que ha de suceder algo similar con la recolección del efectivo correspondiente a cada <rem:ref oid="GLO-0008">quiniela</rem:ref>.   <br/><br/>Sugerencias de solución, basadas en el problema analizado.<br/>Para solucionar el problema de inserción de datos con un margen de equivocación muy mínimo es posible que el llenado de las quinielas sea mediante un dispositivo electrónico, por ejemplo podría ser un dispositivo móvil inteligente, o mediante una página web, para aumentar la versatilidad y la facilidad de acceso del cliente, así también será posible evitar mayoría de gastos de impresiones, gastos de transporte, entre otros, para disminuir de manera considerable se puede realizar pagos mediante dinero electrónico, en cuentas de banco, tarjetas de débito o de crédito, o en dinero electrónico como por ejemplo Paypal y así el usuario podrá contar con su dinero casi de manera inmediata y cobrarlo en el lugar, y horario que más se adecue a sus actividades cotidianas, y un sistema similar se puede incluir con el pago de las quinielas.<br/><br/>Para comprar los resultados de todos los <rem:ref oid="GLO-0004">participantes</rem:ref>, se puede implementar un algoritmo que tome directamente de la página oficial de la federación mexicana de futbol los resultados y éste también contabiliza los puntos de cada participante y así dictaminar entre qué <rem:ref oid="GLO-0004">participantes</rem:ref> se debe de repartir el premio de la bolsa acumulada en esa <rem:ref oid="GLO-0003">jornada</rem:ref>.         <br/><br/></rem:results>
+	<rem:attenders stakeholders ="STK-0001 STK-0003 "/>
+</rem:meeting>
+</rem:section>
+</rem:c_requirementsSpecification>
+<rem:d_requirementsSpecification oid = "DRS-0002">
+<rem:name>Documento de Análisis del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:d_requirementsSpecification>
+<rem:defectsSpecification oid = "DFS-0003">
+<rem:name>Registro de Conflictos y Defectos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:defectsSpecification>
+<rem:changeRequestsSpecification oid = "CHS-0004">
+<rem:name>Registro de Peticiones de Cambio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2017</rem:year>
+<rem:month>4</rem:month>
+<rem:day>4</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:changeRequestsSpecification>
+<rem:trace source = "UC-0002"  target = "OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0001"  target = "UC-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0001">
+<rem:name>
+Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Real numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0003">
+<rem:name>
+Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0005">
+<rem:name>
+Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Dates</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+</rem:predefinedValueTypes>
+<rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0001">
+<rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+</rem:predefinedValues>
+</rem:requirementsProject>

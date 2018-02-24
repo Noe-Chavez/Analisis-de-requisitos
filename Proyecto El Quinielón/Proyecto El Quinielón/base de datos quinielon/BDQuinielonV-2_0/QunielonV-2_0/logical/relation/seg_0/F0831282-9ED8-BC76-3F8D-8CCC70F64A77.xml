@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Equipo/Estadio " directorySegmentName="seg_0" id="F0831282-9ED8-BC76-3F8D-8CCC70F64A77">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 06:48:29 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<sourcePk>FFF25BAA-DD82-0723-B2E9-B3980AB5BEB4</sourcePk>
+<targetPk>ECB45426-5266-CC8E-3109-1D70402E0EF0</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F0CAA1EF-F64B-D11E-3E43-D3A9F7CA64B0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>53B340F8-DB27-5EEB-D316-23B10F78A659</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

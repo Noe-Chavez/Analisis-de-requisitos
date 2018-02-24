@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3ECCD71-E931-27C3-B37E-661530B3CD23" name="RESULTADO OFICIAL">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 00:47:19 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id resultado" id="3E4171C1-3FF1-EA75-43B0-388586B011E3">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:03:38 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valores oficiales " id="19D7A888-55B9-A4EC-515F-73C96FB725C5">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:03:56 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jornada" id="5F9C3CCB-3290-C277-8435-33412334092C">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:30:58 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha de consulta " id="577AFAA4-BBDD-0407-D723-1CDF923CE570">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:31:19 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id quiniela" id="6ADEB40B-FEA2-0D3B-8876-F8F59470C213">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:57:04 UTC</createdTime>
+<comment>Número único asignado algorítmicamente. </comment>
+<generatorID>7FC1AB41-D260-BAE4-D039-99A5C41D3DD7</generatorID>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A6F44134-1BF1-2056-3E6E-68B3FC7C4441</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70F9B8DA-3880-3393-B951-D6EA65CCCE42" name="RESULTADO PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:03:53 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3E4171C1-3FF1-EA75-43B0-388586B011E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

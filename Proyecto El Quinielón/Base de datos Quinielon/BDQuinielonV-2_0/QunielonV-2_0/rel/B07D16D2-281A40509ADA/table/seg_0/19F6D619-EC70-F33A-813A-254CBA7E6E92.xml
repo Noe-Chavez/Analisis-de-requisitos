@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19F6D619-EC70-F33A-813A-254CBA7E6E92" name="ESTADIO">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>53B340F8-DB27-5EEB-D316-23B10F78A659</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estadio" id="3189D038-A020-F6FA-F6EA-57F560944928">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>4FCC0DC5-8268-E816-0D71-2D53CB1A0D6C</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="4FA2284D-16C6-E509-3A56-2D7C53C40F10">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>7442AD7C-1ACD-51B4-1546-DF1030589A60</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="343D1425-AA01-7CCE-9F76-BF29258A1189">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>0E222568-150B-1F4B-7571-E40D86A4B944</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dirección" id="688048C9-4598-752B-A2A3-E863FDD52073">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>18B8B2F9-F634-5F2B-C96C-B2AAD4B3F25A</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35DA7C49-BF29-DFCE-1140-790C2F9538A8" name="ESTADIO_PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>ECB45426-5266-CC8E-3109-1D70402E0EF0</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3189D038-A020-F6FA-F6EA-57F560944928"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

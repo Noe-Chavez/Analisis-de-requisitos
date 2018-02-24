@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D3104F4-7BE5-46C8-8091-ACFB2020F1D9" name="TARJETA_BANCARIA">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Entidad que contiene los datos una tarjeta bancaria asignada a un cuentahabiente de ésta misma.</comment>
+<generatorID>FDD2C522-A0FC-8D50-360A-B315B95439CF</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<abbreviation>tarjeta_bancaria</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_de_cuenta" id="B8695A5A-695A-C662-3F37-A1D33A6837B1">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Número único asociado a cada tarjeta emitida a un cuentahabiente por el banco que brinda el servicio a éste</comment>
+<generatorID>BA01592A-8098-005B-45B5-49DFEC983294</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_de_cuenta" id="A5036A6D-883A-B5DB-CCAE-C650F71EBFB8">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Se refiere a el tipo de tarjeta.</comment>
+<generatorID>8AA6AD8F-1B72-42F2-2BB0-E7802081AE49</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_del_banco" id="8C5AD607-4F7B-1CF4-EC71-7438467EC07B">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Razón social con el que la institución bancaria se encuentra registrada.</comment>
+<generatorID>8B968240-6B85-577C-D875-2C1A73F2DC63</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_del_cuentahabiente" id="3A454604-AD8E-D80D-1F84-B0027C0B6305">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Nombre con la cual la tarjeta se encuentra dada de alta.</comment>
+<generatorID>A5303E50-9DD4-655C-73D2-E6C46DC95541</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_de_expedición" id="83F63426-F3B2-A9BC-C36C-8DD8148BFCD1">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Fecha de vencimiento de la tarjeta bancaria. </comment>
+<generatorID>A9F8B4AE-0FCB-4972-DD9D-F53B4CAACCFB</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6215669-A07D-24EB-B8D0-0D81C46F1EBA" name="TARJETA_BANCARIA_PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>8543D294-62CF-D8AA-F676-EB091F00C45B</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8695A5A-695A-C662-3F37-A1D33A6837B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

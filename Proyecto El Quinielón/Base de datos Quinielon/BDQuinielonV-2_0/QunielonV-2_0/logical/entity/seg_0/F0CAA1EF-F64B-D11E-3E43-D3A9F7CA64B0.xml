@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0CAA1EF-F64B-D11E-3E43-D3A9F7CA64B0" name="EQUIPO">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:36:08 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id equipo" id="6C0EA505-C7D6-2895-1816-730878B4BC9D">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:36:19 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="5CAA0793-666F-B5FB-BDB2-2C8414FEE624">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:36:42 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="representando" id="E9B7206F-D7B8-DCEF-9FD3-736A251070CA">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:37:02 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estadio" id="2AE8E40D-83B3-3C0D-FED8-5E89F5D95671">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 06:49:43 UTC</createdTime>
+<generatorID>F0831282-9ED8-BC76-3F8D-8CCC70F64A77</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<referedAttribute>4FCC0DC5-8268-E816-0D71-2D53CB1A0D6C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id equipo1" id="EC70E112-C57C-CCDA-5F45-7CDBCC8F58C3">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 06:49:43 UTC</createdTime>
+<generatorID>F0831282-9ED8-BC76-3F8D-8CCC70F64A77</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<referedAttribute>BB52C222-0CB1-8F86-2073-C02E3EBE921A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FFF25BAA-DD82-0723-B2E9-B3980AB5BEB4" name="EQUIPO PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 01:36:38 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C0EA505-C7D6-2895-1816-730878B4BC9D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

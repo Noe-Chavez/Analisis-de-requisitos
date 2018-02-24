@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="quiniela / bolsa acumulada" directorySegmentName="seg_0" id="634CA1D5-B8AC-E890-BCA5-7809BB58AB9A">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:13:32 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<sourcePk>4E8FBA99-D54B-F5AF-C483-043E1EF1B788</sourcePk>
+<targetPk>025F27D1-C139-C38A-C177-5EA9F7874526</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DC027C3E-F9C8-5CBE-3383-6B0D056CE842</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7049E36D-5968-27E0-712B-99AC89A2355A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

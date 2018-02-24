@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Quiniela/resultado oficial" directorySegmentName="seg_0" id="7FC1AB41-D260-BAE4-D039-99A5C41D3DD7">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:55:49 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<sourcePk>70F9B8DA-3880-3393-B951-D6EA65CCCE42</sourcePk>
+<targetPk>4E8FBA99-D54B-F5AF-C483-043E1EF1B788</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C3ECCD71-E931-27C3-B37E-661530B3CD23</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DC027C3E-F9C8-5CBE-3383-6B0D056CE842</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

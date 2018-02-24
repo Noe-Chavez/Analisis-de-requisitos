@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cuenta de usuario / participante" directorySegmentName="seg_0" id="4CF6A9CA-B4AB-C23D-E311-6EB7538CA699">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-16 05:30:35 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<targetPk>F4CA1546-AD29-4499-0C9F-900A1F47ED7B</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F97DCD6A-3B19-37A3-9BE2-B0905A44D85A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CF864DD1-880D-2F34-9837-16B789D15782</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

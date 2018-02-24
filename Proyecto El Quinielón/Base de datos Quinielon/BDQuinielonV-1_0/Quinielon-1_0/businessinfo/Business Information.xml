@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="5FBE0A88-C6D7-3661-7519-B5967B87223F">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:01:34 UTC</createdTime>
+<ownerDesignName>BaseDatosQuinielon</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

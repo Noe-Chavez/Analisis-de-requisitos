@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5C4FBE9-DCDE-A265-EA1C-11F11516837E" containerWithKeyObject="1EEF2DF8-9B9B-96CF-80A8-8A9A76895FD4" localFKIndex="A1BCE2B2-97E8-9ADC-50F5-13D7EC56FD8D" name="QUINIELA_BOLSA_ACUMULADA_FK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>634CA1D5-B8AC-E890-BCA5-7809BB58AB9A</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9EE8EC6D-7010-1D10-A090-37C901561547</referredTableID>
+<keyObject>E6F19ACC-5BD1-8BB0-7F5F-81D97B54E33C</keyObject>
+<referredKeyID>E6F19ACC-5BD1-8BB0-7F5F-81D97B54E33C</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

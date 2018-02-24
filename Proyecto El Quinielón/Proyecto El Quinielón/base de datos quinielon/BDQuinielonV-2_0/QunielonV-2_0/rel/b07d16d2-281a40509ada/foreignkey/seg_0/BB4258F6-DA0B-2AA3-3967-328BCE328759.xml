@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB4258F6-DA0B-2AA3-3967-328BCE328759" containerWithKeyObject="812DD851-674A-687A-F30F-DD7C3EDDF090" localFKIndex="98AD7E34-5F04-8373-39BA-13EEFF299EF8" name="PARTICIPANTE_TARJETA_BANCARIA_FK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>003842E8-2CD1-F99B-C477-0271761CA750</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3D3104F4-7BE5-46C8-8091-ACFB2020F1D9</referredTableID>
+<keyObject>A6215669-A07D-24EB-B8D0-0D81C46F1EBA</keyObject>
+<referredKeyID>A6215669-A07D-24EB-B8D0-0D81C46F1EBA</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

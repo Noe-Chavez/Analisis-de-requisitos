@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF864DD1-880D-2F34-9837-16B789D15782" name="PARTICIPANTE ">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:15:35 UTC</createdTime>
+<comment>Entidad en se almacenarán los datos asociados a los participantes o también conocidos como clientes, éstos son deseados por el negocio.</comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<synonym>CLIENTE </synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contraseña" id="C549E7AF-6E06-16ED-CFBB-5083CC291CEA">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:27:32 UTC</createdTime>
+<comment>Clave  única asignada algorítmica mente. </comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="E7F2BA59-C68C-27E3-48DE-085176475F94">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:29:30 UTC</createdTime>
+<comment>Nombre propio dado de alta en el registro civil. </comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido paterno" id="801838E1-18F8-D33A-3E05-661A1FD3CD4A">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:30:27 UTC</createdTime>
+<comment>:Apellido que es heredado de parte del padre de la persona en cuestión.</comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido materno" id="9D21257E-0B44-BDFA-3FE2-A44B4053ECD2">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:34:24 UTC</createdTime>
+<comment>Apellido que es heredado de parte de la  madre de la persona en cuestión. </comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre de cuenta" id="2EF946F5-9181-51F4-AD12-1DE600481A67">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:34:59 UTC</createdTime>
+<comment>sinonimo apodo: nombre que se da a un individuo, en sustitución del propio, normalmente tomado de sus particularidades físicas o de alguna otra circunstancia.    </comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="edad" id="FAC483C6-4E47-3572-BD55-96CDCB2886DC">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:36:03 UTC</createdTime>
+<comment>Tiempo de existencia desde el nacimiento.</comment>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4CA1546-AD29-4499-0C9F-900A1F47ED7B" name="PARTICIPANTE PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 23:28:25 UTC</createdTime>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C549E7AF-6E06-16ED-CFBB-5083CC291CEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

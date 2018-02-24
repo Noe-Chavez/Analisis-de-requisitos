@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDD2C522-A0FC-8D50-360A-B315B95439CF" name="TARJETA BANCARIA">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:02:22 UTC</createdTime>
+<comment>Entidad que contiene los datos una tarjeta bancaria asignada a un cuentahabiente de ésta misma.</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>tarjeta_bancaria</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero de cuenta" id="BA01592A-8098-005B-45B5-49DFEC983294">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:26:38 UTC</createdTime>
+<comment>Número único asociado a cada tarjeta emitida a un cuentahabiente por el banco que brinda el servicio a éste</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo de cuenta" id="8AA6AD8F-1B72-42F2-2BB0-E7802081AE49">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:30:06 UTC</createdTime>
+<comment>Se refiere a el tipo de tarjeta.</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre del banco" id="8B968240-6B85-577C-D875-2C1A73F2DC63">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:34:46 UTC</createdTime>
+<comment>Razón social con el que la institución bancaria se encuentra registrada.</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre del cuentahabiente" id="A5303E50-9DD4-655C-73D2-E6C46DC95541">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:37:31 UTC</createdTime>
+<comment>Nombre con la cual la tarjeta se encuentra dada de alta.</comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha de expedición " id="A9F8B4AE-0FCB-4972-DD9D-F53B4CAACCFB">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:40:12 UTC</createdTime>
+<comment>Fecha de vencimiento de la tarjeta bancaria. </comment>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8543D294-62CF-D8AA-F676-EB091F00C45B" name="TARJETA DE BANCARIA PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-15 07:27:39 UTC</createdTime>
+<ownerDesignName>Quinielon-1_0</ownerDesignName>
+<engineerTo>
+<item key="B07D16D2-A811-54E3-B2C2-281A40509ADA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BA01592A-8098-005B-45B5-49DFEC983294</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

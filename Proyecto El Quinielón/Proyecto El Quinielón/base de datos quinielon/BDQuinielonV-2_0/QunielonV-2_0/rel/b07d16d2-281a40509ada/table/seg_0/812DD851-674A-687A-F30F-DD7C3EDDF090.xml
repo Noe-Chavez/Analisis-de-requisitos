@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="812DD851-674A-687A-F30F-DD7C3EDDF090" name="PARTICIPANTE">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Entidad en se almacenarán los datos asociados a los participantes o también conocidos como clientes, éstos son deseados por el negocio.</comment>
+<generatorID>CF864DD1-880D-2F34-9837-16B789D15782</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contraseña" id="137EC81C-7D4C-145E-8D54-10AABE8C5C92">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Clave  única asignada algorítmica mente. </comment>
+<generatorID>C549E7AF-6E06-16ED-CFBB-5083CC291CEA</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="13E1F7CD-1C53-E5DD-CE9A-07FB80401D67">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Nombre propio dado de alta en el registro civil. </comment>
+<generatorID>E7F2BA59-C68C-27E3-48DE-085176475F94</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_paterno" id="41496462-479B-2E60-0D40-E5F5B5005D40">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>:Apellido que es heredado de parte del padre de la persona en cuestión.</comment>
+<generatorID>801838E1-18F8-D33A-3E05-661A1FD3CD4A</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_materno" id="2465721B-7510-591C-0B6C-13A3CC8711C1">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Apellido que es heredado de parte de la  madre de la persona en cuestión. </comment>
+<generatorID>9D21257E-0B44-BDFA-3FE2-A44B4053ECD2</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_de_cuenta" id="5DEF1758-E0B2-F34D-46B8-3D946D61BD2E">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>sinonimo apodo: nombre que se da a un individuo, en sustitución del propio, normalmente tomado de sus particularidades físicas o de alguna otra circunstancia.    </comment>
+<generatorID>2EF946F5-9181-51F4-AD12-1DE600481A67</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad" id="9A2D41EA-FE2A-BDBF-013B-913B9C6AFB22">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Tiempo de existencia desde el nacimiento.</comment>
+<generatorID>FAC483C6-4E47-3572-BD55-96CDCB2886DC</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TARJETA_BANCARIA_numero_de_cuenta" id="B3E93B14-20F9-E6C3-D828-30F86EBC8D91">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<comment>Número único asociado a cada tarjeta emitida a un cuentahabiente por el banco que brinda el servicio a éste</comment>
+<generatorID>F1D9A542-CBE8-C429-C733-F7B47F26A4A6</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB4258F6-DA0B-2AA3-3967-328BCE328759" referredColumn="B8695A5A-695A-C662-3F37-A1D33A6837B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5501A14-BE7E-AED5-02D1-AF9130E6531D" name="PARTICIPANTE_PK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>F4CA1546-AD29-4499-0C9F-900A1F47ED7B</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="137EC81C-7D4C-145E-8D54-10AABE8C5C92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98AD7E34-5F04-8373-39BA-13EEFF299EF8" name="PARTICIPANTE_TARJETA_BANCARIA_FK">
+<createdBy>Dissek</createdBy>
+<createdTime>2017-05-17 04:48:19 UTC</createdTime>
+<generatorID>003842E8-2CD1-F99B-C477-0271761CA750</generatorID>
+<ownerDesignName>QunielonV-2_0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3E93B14-20F9-E6C3-D828-30F86EBC8D91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
